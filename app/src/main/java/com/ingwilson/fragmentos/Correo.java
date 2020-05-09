@@ -5,6 +5,12 @@ public class Correo {
     private String asunto;
     private String texto;
 
+    public Correo(String de, String asunto, String texto) {
+        this.de = de;
+        this.asunto = asunto;
+        this.texto = texto;
+    }
+
     public String getDe() {
         return de;
     }
@@ -26,12 +32,6 @@ public class Correo {
     }
 
     public void setTexto(String texto) {
-        this.texto = texto;
-    }
-
-    public Correo(String de, String asunto, String texto) {
-        this.de = de;
-        this.asunto = asunto;
         this.texto = texto;
     }
 }
